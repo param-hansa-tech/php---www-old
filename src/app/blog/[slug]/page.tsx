@@ -1,16 +1,16 @@
-import { Text } from "@/components/common";
-import { Page } from "@/components/common/page";
-import { BlockContent } from "@/components/misc/portable-text";
-import Section from "@/components/misc/section";
-import { urlFor } from "@/sanity/lib/image";
-import { sanityFetch } from "@/sanity/lib/live";
-import { postQuery } from "@/sanity/lib/queries";
-import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
+import { Text } from '@/components/common';
+import { Page } from '@/components/common/page';
+import { BlockContent } from '@/components/misc/portable-text';
+import Section from '@/components/misc/section';
+import { urlFor } from '@/sanity/lib/image';
+import { sanityFetch } from '@/sanity/lib/live';
+import { postQuery } from '@/sanity/lib/queries';
+import { ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
 export const revalidate = 0;
 
@@ -26,11 +26,11 @@ export default async function ArticlePage(props: any) {
   }
 
   return (
-    <Page headerProps={{ theme: "light" }}>
+    <Page headerProps={{ theme: 'light' }}>
       <Section
         sectionProps={{
           className:
-            "bg-[#FAFAFA] text-[#4A1A51] border-b border-b-zinc-500/20",
+            'bg-[#FAFAFA] text-[#4A1A51] border-b border-b-zinc-500/20',
         }}
         guides={false}
       >
@@ -46,9 +46,13 @@ export default async function ArticlePage(props: any) {
               </div>
             </Link>
           </div>
-          <Text font="serif" as="h1" scale="h2" className="px-2 pb-16 text-center tracking-[-0.01em] leading-[1.1] font-normal">
-                        Meet our four pillars that don’t just guide us — they define us,
-                        they’re the gears of our operating system.
+          <Text
+            font="serif"
+            as="h1"
+            scale="h2"
+            className="px-2 pb-16 text-center tracking-[-0.01em] leading-[1.1] font-normal"
+          >
+            {post.title}
           </Text>
           {/* <h1 className="pb-16 max-w-6xl text-[#4A1A51] text-center font-instrument tracking-[-0.01em] text-7xl leading-[1.1]">
             {post.title}
