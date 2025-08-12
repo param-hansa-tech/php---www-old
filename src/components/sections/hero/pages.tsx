@@ -272,7 +272,7 @@ export const HeroV3 = ({
     <div className="w-full xl:min-h-[60rem] h-screen xl:max-h-[64rem] m-auto max-w-6xl px-2 relative">
       <div className="z-0 pointer-events-none  absolute w-full h-full m-auto max-w-6xl px-2 flex flex-col items-center justify-center">
         <video
-          className="brightness-100 rotate-55 contrast-125 scale-100 hue-rotate-90 opacity-40"
+          className="hide-in-safari hide-in-safari-1 brightness-100 rotate-55 contrast-125 scale-100 hue-rotate-90 opacity-40"
           autoPlay
           muted
           loop
