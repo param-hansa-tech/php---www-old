@@ -17,7 +17,7 @@ export default async function ArticlePage() {
     sanityFetch({ query: allPostsQuery }),
   ]);
   return (
-    <Page headerProps={{ theme: "dark" }}>
+    <Page headerProps={{ theme: "light" }}>
       <Section
         sectionProps={{
           className: "bg-dark text-light",
@@ -69,7 +69,7 @@ export default async function ArticlePage() {
                     data-id={`card-${i}`}
                     className=""
                     key={i}
-                    href={`/blog/${o.slug}`}
+                    href={``}
                   >
                     <tr className="group grid grid-cols-8 h-32 border-x border-x-zinc-500/20 border-b border-b-zinc-500/20 bg-[#FAFAFA] hover:bg-[#4A1A51] transition ease-in-out">
                       <Cursor
@@ -84,7 +84,7 @@ export default async function ArticlePage() {
                           duration: 0.3,
                           bounce: 0.1,
                         }}
-                        className="overflow-hidden hidden md:block"
+                        className="hidden"
                         springConfig={{
                           bounce: 0.01,
                         }}
@@ -101,21 +101,21 @@ export default async function ArticlePage() {
                       <th className="hidden md:col-start-1 md:col-span-1 flex flex-col items-start justify-center">
                         <div className="ml-8 h-3 w-3 rounded-full bg-zinc-200" />
                       </th>
-                      <th className="md:col-start-1 col-span-7 md:col-start-2 md:col-span-4 xl:-ml-16 mr-16 flex items-center justify-start">
+                      <th className="md:col-start-1 col-span-7 md:col-start-2 md:col-span-5 xl:-ml-16 mr-16 flex items-center justify-start">
                         <p className="px-2 text-left text-[#4A1A51] group-hover:text-[#FAFAFA] font-schibsted font-semibold tracking-[-0.04em] text-xl leading-[1.2] truncate">
                           {o.title}
                         </p>
                       </th>
-                      <th className="hidden md:col-start-6 md:col-span-1 mr-4 flex items-center justify-start">
+                      {/* <th className="hidden md:col-start-6 md:col-span-1 mr-4 flex items-center justify-start">
                         <p className="text-[#4A1A51]/50 group-hover:text-[#FAFAFA] capitalize font-schibsted font-semibold tracking-[-0.04em] text-sm leading-[1.2] truncate">
                           {o.name}
                         </p>
-                      </th>
-                      <th className="hidden md:col-start-7 md:col-span-1 mr-4 flex items-center justify-start">
+                      </th> */}
+                      {/* <th className="hidden md:col-start-7 md:col-span-1 mr-4 flex items-center justify-start">
                         <p className="text-[#4A1A51]/50 group-hover:text-[#FAFAFA] font-schibsted font-semibold tracking-[-0.04em] text-sm leading-[1.2] truncate">
                           {new Date(o.date).toLocaleDateString()}
                         </p>
-                      </th>
+                      </th> */}
                       <th className="col-start-8 col-span-1 flex flex-col items-end justify-center">
                         <ArrowRight className="mr-8 h-8 text-[#4A1A51] group-hover:text-[#FAFAFA]" />
                       </th>
