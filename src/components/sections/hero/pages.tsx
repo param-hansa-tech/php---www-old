@@ -3,6 +3,7 @@ import { Guides, ZStack } from '@/components/misc';
 import { AnimatedLines } from '@/components/misc/animated-lines';
 import Section from '@/components/misc/section';
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
 export const HeroV0 = ({
   lineOne,
@@ -106,12 +107,14 @@ export const HeroV1 = ({
   lineTwo,
   primaryCTA,
   secondaryCTA,
+  description,
   theme = 'dark',
 }: {
   lineOne?: string;
   lineTwo?: string;
   primaryCTA?: { label: React.ReactNode; href: string };
   secondaryCTA?: { label: React.ReactNode; href: string };
+  description?: string;
   theme?: string;
 }) => (
   <Section
@@ -148,14 +151,13 @@ export const HeroV1 = ({
           }}
         />
       )}
-      <div className="mt-32 grid grid-cols-4">
-        <p className="pl-2 font-schibsted font-semibold tracking-[-0.04em] text-sm leading-[1.2] col-start-3 col-span-2 lowercase">
-          Paramhansa Yogananda’s timeless teachings remind us that true progress
-          harmonizes the material and the divine. At param hansa philanthropies,
-          we channel his wisdom to ensure technology serves not just humanity,
-          but the sanctity of life itself.
-        </p>
-      </div>
+      {description && (
+        <div className="mt-32 grid grid-cols-4">
+          <p className="pl-2 font-schibsted font-semibold tracking-[-0.04em] text-sm leading-[1.2] col-start-3 col-span-2 lowercase">
+            {description}
+          </p>
+        </div>
+      )}
       {/* <div className="mt-32 grid grid-cols-4">
         <p className="pl-2 font-schibsted font-semibold tracking-[-0.04em] text-sm leading-[1.2] col-start-1 col-span-2 md:col-start-3 md:col-span-1 lowercase">
           Synthetic Cells, <br />
@@ -456,4 +458,67 @@ export const HeroV4 = ({
       </div>
     </div>
   </ZStack>
+);
+
+export const HeroV5 = ({
+  primaryCTA,
+  secondaryCTA,
+  description,
+}: {
+  primaryCTA?: { label: string; href: string };
+  secondaryCTA?: { label: string; href: string };
+  description?: string;
+}) => (
+  <div className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/qxbio-gradient-bg.png)' }}>
+    <div className="w-full h-full m-auto max-w-6xl px-4 md:px-8 py-24 md:py-36">
+      
+
+      {/* Main Content */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-24">
+        {/* Headline */}
+        <div className="col-span-1">
+          <Text 
+            as="h1" 
+            scale="h4" 
+            className="text-white font-bold leading-[1.1] tracking-tight uppercase"
+          >
+            A FLAGSHIP FORUM FOR COLLABORATIVE DISCOVERY
+          </Text>
+        </div>
+
+        {/* Description */}
+        <div className="col-span-1 flex items-start md:items-center">
+          <Text as="p" scale="p1" className="text-white/90">
+            {description || "We, Param Hansa Philanthropies envisioned QxB.io as an flagship forum to foster cross-institutional and interdisciplinary collaboration in computational biology and oncology."}
+          </Text>
+        </div>
+      </div>
+
+      {/* CTAs */}
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+        {primaryCTA && (
+          <Link
+            href={primaryCTA.href}
+            className="group aspect-square inline-flex items-center justify-between px-6 py-4 bg-white text-black hover:bg-gray-100 transition-colors border-2 border-white"
+          >
+            <span className="font-bold text-sm md:text-base tracking-wider uppercase">
+              {primaryCTA.label}
+            </span>
+            <ArrowUpRight className="ml-4 h-5 w-5" />
+          </Link>
+        )}
+        {secondaryCTA && (
+          <Link
+            href={secondaryCTA.href}
+            className="group inline-flex items-center justify-between px-6 py-4 bg-black text-white hover:bg-gray-900 transition-colors border-2 border-white"
+          >
+            <span className="font-bold text-sm md:text-base tracking-wider uppercase">
+              {secondaryCTA.label}
+            </span>
+            <ArrowUpRight className="ml-4 h-5 w-5" />
+          </Link>
+        )}
+      </div>
+    </div>
+  </div>
 );
