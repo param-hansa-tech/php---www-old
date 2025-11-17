@@ -43,7 +43,7 @@ export default function QxBioPage() {
               Sessions <ArrowRight className="h-8 mr-4" />
             </>
           ),
-          href: "https://lu.ma/b6ofjbxb",
+          href: "#sessions-schedule",
         }}
       />
 
@@ -69,9 +69,6 @@ export default function QxBioPage() {
             and pioneers in computational biology and quantitative sciences.
           </Text>
         </div>
-      </Section>
-
-      <Section>
         <div className="grid grid-cols-4 text-[#4A1A51] border-b border-b-zinc-500/20">
           <div className="col-start-1 col-span-4 md:col-start-3 md:col-span-2 border-t border-t-zinc-500/20 px-2">
             <Text
@@ -89,6 +86,16 @@ export default function QxBioPage() {
       </Section>
 
       <Section>
+      <div className="pt-32 text-dark border-t border-t-zinc-500/20">
+      <Text
+            as="h3"
+            scale="h3"
+            id="sessions-schedule"
+            className="col-start-1 col-span-4 px-2 pb-20 md:pb-24 lg:pb-28 xl:pb-32"
+          >
+            Sessions Schedule
+          </Text>
+          </div>
 
         <div className="pb-32 overflow-x-auto">
           <div className="min-w-[1000px]">

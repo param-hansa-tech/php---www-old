@@ -5,6 +5,7 @@ import Section from "@/components/misc/section";
 // import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { HeroV1 } from "@/components/sections/hero/pages";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -135,34 +136,34 @@ export default function AboutPage() {
               name="Dheeraj & Swapna Pandey"
               role="Founders" />
         </div> */}
-          <div className="flex flex-col">
+          <Link href="https://www.linkedin.com/in/dpandey/" target="_blank" className="flex flex-col">
             <ProgressiveBlurBasic
               imgSrc="/about-ds-03.png"
               name="Dheeraj & Swapna Pandey"
               role="Founders"
             />
-          </div>
-          <div className="flex flex-col">
+          </Link>
+          <Link href="https://www.linkedin.com/in/amit-kumar-cfa-484593/" target="_blank" className="flex flex-col">
             <ProgressiveBlurBasic
               imgSrc="/about-amit-02.png"
               name="Amit Kumar"
               role="Co-Founder"
             />
-          </div>
-          <div className="flex flex-col">
+          </Link>
+          <Link href="https://www.linkedin.com/in/rakesh-kumar-55697113/" target="_blank" className="flex flex-col">
             <ProgressiveBlurBasic
               imgSrc="/about-rakesh-02.png"
               name="Rakesh Kumar"
               role="Director"
             />
-          </div>
-          <div className="flex flex-col">
+          </Link>
+          <Link href="https://www.linkedin.com/in/adarshdas/" target="_blank" className="flex flex-col">
             <ProgressiveBlurBasic
               imgSrc="/about-adarsh-02.png"
               name="Adarsh Das"
               role="Director"
             />
-          </div>
+          </Link>
         </div>
       </Section>
     </Page>
