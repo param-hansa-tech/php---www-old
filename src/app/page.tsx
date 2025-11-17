@@ -22,7 +22,7 @@ export default function Home() {
               QxBio <ArrowRight className="h-8 mr-4" />
             </>
           ),
-          href: "https://lu.ma/b6ofjbxb",
+          href: "/qxbio",
         }}
         secondaryCTA={{
           label: (
