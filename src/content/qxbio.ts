@@ -363,7 +363,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     startTime: "11:47 AM",
     endTime: "12:08 PM",
     title: "UT Austin",
-    speakers: ["Dr. Adam Klivans", "Dr. Karen Willcox", "Dr. Thomas Tankeelov"],
+    speakers: ["Dr. Adam Klivans", "Dr. Karen Willcox", "Dr. Thomas Yankeelov"],
     institution: "UT Austin",
     duration: "21 min",
     type: "talk",
