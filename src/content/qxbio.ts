@@ -120,7 +120,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
       }
     ]
   },
-  
+
   // SESSION 1: Quantum in Bio - The Industry Perspective
   {
     sessionNumber: "Session 1",
@@ -180,7 +180,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     session: "Session 1: Quantum in Bio - The Industry Perspective",
     chair: "Dheeraj Pandey"
   },
-  
+
   // Break
   {
     sessionNumber: "Break",
@@ -195,7 +195,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     type: "break",
     isKeynote: false
   },
-  
+
   // SESSION 2: Quantum in Bio - Scientists/Researchers
   {
     sessionNumber: "Session 2",
@@ -269,7 +269,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     session: "Session 2: Quantum in Bio - Scientists/Researchers",
     chair: "Dr. Michael Fischbach"
   },
-  
+
   // SESSION 3: Reflect on Experiences & Outcomes Since Inception
   {
     sessionNumber: "Session 3",
@@ -363,7 +363,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     startTime: "11:47 AM",
     endTime: "12:08 PM",
     title: "UT Austin",
-    speakers: ["Dr. Adam", "Dr. Karen", "Dr. Tom"],
+    speakers: ["Dr. Adam Klivans", "Dr. Karen Willcox", "Dr. Thomas Tankeelov"],
     institution: "UT Austin",
     duration: "21 min",
     type: "talk",
@@ -386,7 +386,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     session: "Session 3: Reflect on Experiences & Outcomes Since Inception",
     chair: "Amit Kumar & Adarsh Das"
   },
-  
+
   // Lunch Break
   {
     sessionNumber: "Lunch Break",
@@ -401,7 +401,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     type: "break",
     isKeynote: false
   },
-  
+
   // SESSION 4: Breakout Sessions
   {
     sessionNumber: "Session 4",
@@ -420,7 +420,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     breakoutGroups: [
       {
         name: "Group 1: Fundamental vs Translational Research",
-        facilitators: ["Dr. Charlie Taylor", "Mr. Amit Kumar"]
+        facilitators: ["Dr. Charley Taylor", "Mr. Amit Kumar"]
       },
       {
         name: "Group 2: Education & Training (Priorities, Challenges & Opportunities)",
@@ -448,7 +448,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     description: "3 representatives - 1 from each group",
     chair: "Dheeraj & Swapna Pandey"
   },
-  
+
   // SESSION 5: Concluding Thoughts
   {
     sessionNumber: "Session 5",
@@ -493,7 +493,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     isKeynote: false,
     session: "Session 5: Concluding Thoughts"
   },
-  
+
   // High Tea & Networking
   {
     sessionNumber: "Networking",
