@@ -219,7 +219,7 @@ export const QXBIO_SESSIONS: QxbioSession[] = [
     startTime: "10:14 AM",
     endTime: "10:21 AM",
     title: "Computational Medicine",
-    speakers: ["Dr. Charlie Taylor"],
+    speakers: ["Dr. Charley Taylor"],
     institution: "",
     duration: "7 min",
     type: "talk",
